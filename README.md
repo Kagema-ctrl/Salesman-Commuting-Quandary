@@ -1,2 +1,24 @@
-# Salesman-Commuting-Quandary
-This project solves the Traveling Salesman Problem for five locations in Monaco using R and GIS tools. It calculates the shortest round-trip (27.505 km) through optimization modeling and visualizes the route using interactive and static maps. A blend of geospatial data and smart routing.
+# Salesman Commuting Quandary 🚗📍
+
+This project solves the classic **Traveling Salesman Problem (TSP)** for five real-world locations in **Monaco**, using spatial data science and optimization in R. It demonstrates how geospatial data, mathematical modeling, and map visualization can be combined to solve real-world routing challenges.
+
+## 🔍 Project Overview
+
+- **Objective**: Find the shortest route that visits each location once and returns to the starting point.
+- **Study Area**: Monaco — including locations such as Monaco City, La Condamine, Larvotto, Beausoleil, and Ravin de Sainte-Devote.
+- **Result**: The model computed an optimal round-trip distance of **27.505 km**.
+
+## 🧰 Tools & Packages Used
+
+- **Spatial Data**: [`osmdata`](https://cran.r-project.org/package=osmdata), [`geosphere`](https://cran.r-project.org/package=geosphere)
+- **Optimization**: [`ompr`](https://cran.r-project.org/package=ompr), `ROI.plugin.glpk`
+- **Visualization**: `leaflet`, `ggmap`, `ggplot2`
+- **Data Wrangling**: `dplyr`, `tibble`, `janitor`
+
+## 🗺️ Key Features
+
+- Uses real coordinates extracted from OpenStreetMap
+- Constructs a distance matrix using the Haversine formula
+- Solves TSP using Mixed Integer Linear Programming (MILP)
+- Visualizes route on interactive maps (Leaflet) and terrain maps (ggmap)
+
